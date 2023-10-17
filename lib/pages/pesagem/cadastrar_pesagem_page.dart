@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meulucky/models/pesagem_model.dart';
 
-import 'package:meulucky/repositories/pesagem_repository.dart';
+import 'package:meulucky/services/repositories/pesagem_repository.dart';
 
 class CadastrarPesagemPage extends StatefulWidget {
   const CadastrarPesagemPage({super.key});

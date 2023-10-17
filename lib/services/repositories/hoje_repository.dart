@@ -1,5 +1,5 @@
 import 'package:meulucky/models/today_model.dart';
-import 'package:meulucky/repositories/dio/custom_dio.dart';
+import 'package:meulucky/services/repositories/dio/custom_dio.dart';
 
 class HojeRepository {
   var _customDio = CustomDio();

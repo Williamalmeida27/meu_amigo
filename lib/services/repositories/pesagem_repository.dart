@@ -1,7 +1,7 @@
 // ignore: unused_import
 import 'package:dio/dio.dart';
 import 'package:meulucky/models/pesagem_model.dart';
-import 'package:meulucky/repositories/dio/custom_dio.dart';
+import 'package:meulucky/services/repositories/dio/custom_dio.dart';
 
 class PesagemRepository {
   var _customDio = CustomDio();

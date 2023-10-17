@@ -1,8 +1,8 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'package:meulucky/pages/pagina_inicial.dart';
+
 import 'package:meulucky/pages/pesagem/pesagem_page.dart';
 import 'package:meulucky/pages/vacinas/vacinas_page.dart';
 
@@ -30,13 +30,13 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         // appBar: AppBar(
         //   title: Text(widget.title),
         // ),
-        body: TabBarView(controller: tabController, children: const [
-          PaginaInicial(),
-          PesagemPage(),
-          VacinasPage(),
+        body: TabBarView(controller: tabController, children: [
+          const PaginaInicial(),
+          const PesagemPage(),
+          const VacinasPage(),
         ]),
         bottomNavigationBar: ConvexAppBar(
-          backgroundColor: Color.fromARGB(212, 19, 206, 59),
+          backgroundColor: const Color.fromARGB(212, 19, 206, 59),
           style: TabStyle.titled,
           items: const [
             TabItem(

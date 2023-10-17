@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meulucky/pages/my_home_page.dart';
+import 'package:meulucky/services/repositories/cadastro_repository.dart';
 
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({super.key});
@@ -9,8 +10,9 @@ class SplashScreenPage extends StatefulWidget {
 }
 
 class _SplashScreenPageState extends State<SplashScreenPage> {
+  var incioDadosRepository = CadastroRepository();
   openSplash() {
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (_) => MyHomePage()));
     });

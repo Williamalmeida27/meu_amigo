@@ -1,3 +1,4 @@
+import 'package:meulucky/services/repositories/cadastro_repository.dart';
 import 'package:mobx/mobx.dart';
 
 import 'meu_amigo_model.dart';
@@ -14,7 +15,7 @@ abstract class _DadosMeuAmigo with Store {
 
   _DadosMeuAmigo({ObservableList<MeuAmigo>? dadosCao});
 
-  @action
+  @observable
   _DadosMeuAmigo.fromJson(Map<String, dynamic> json) {
     if (json['results'] != null) {
       _dadosCao = <MeuAmigo>[].asObservable();

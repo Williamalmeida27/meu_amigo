@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meulucky/models/meu_amigo_model.dart';
-import 'package:meulucky/repositories/cadastro_repository.dart';
+import 'package:meulucky/services/repositories/cadastro_repository.dart';
 
 class CadastroPage extends StatefulWidget {
   const CadastroPage({super.key});

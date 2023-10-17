@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meulucky/models/pesagem_model.dart';
 import 'package:meulucky/pages/shared/custom_drawer.dart';
-import 'package:meulucky/repositories/pesagem_repository.dart';
+import 'package:meulucky/services/repositories/pesagem_repository.dart';
 
 class PesagemPage extends StatefulWidget {
   const PesagemPage({super.key});
