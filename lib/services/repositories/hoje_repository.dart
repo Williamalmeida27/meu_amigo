@@ -29,4 +29,12 @@ class HojeRepository {
       rethrow;
     }
   }
+
+  Future<void> excluirTarefas(String id) async {
+    try {
+      await _customDio.dio.delete('/hoje/$id');
+    } catch (e) {
+      rethrow;
+    }
+  }
 }

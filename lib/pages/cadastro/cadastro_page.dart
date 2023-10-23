@@ -34,10 +34,7 @@ class _CadastroPageState extends State<CadastroPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Dados Cadastrais"),
-          backgroundColor: Colors.blue,
-        ),
+        appBar: AppBar(title: const Text("Dados Cadastrais")),
         body: ListView(children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

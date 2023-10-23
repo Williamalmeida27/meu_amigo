@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meulucky/pages/my_home_page.dart';
+import 'package:meulucky/main.dart';
+import 'package:meulucky/pages/home/my_home_page.dart';
 import 'package:meulucky/services/repositories/cadastro_repository.dart';
 
 class SplashScreenPage extends StatefulWidget {
@@ -10,11 +11,13 @@ class SplashScreenPage extends StatefulWidget {
 }
 
 class _SplashScreenPageState extends State<SplashScreenPage> {
-  var incioDadosRepository = CadastroRepository();
+  var getDados = getIt<CadastroRepository>().obterDados();
   openSplash() {
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => MyHomePage()));
+      if (getDados != null) {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => MyHomePage()));
+      }
     });
   }
 

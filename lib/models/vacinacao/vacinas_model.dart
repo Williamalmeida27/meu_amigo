@@ -1,12 +1,15 @@
-class Vacinacao {
+class VacinaModel {
   String? data;
+
   String? vacina;
+
   Veterinario? veterinario;
+
   String? retorno;
 
-  Vacinacao({this.data, this.vacina, this.veterinario, this.retorno});
+  VacinaModel({this.data, this.vacina, this.veterinario, this.retorno});
 
-  Vacinacao.fromJson(Map<String, dynamic> json) {
+  VacinaModel.fromJson(Map<String, dynamic> json) {
     data = json['data'];
     vacina = json['vacina'];
     veterinario = json['veterinario'] != null

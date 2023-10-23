@@ -1,32 +1,13 @@
-import 'package:mobx/mobx.dart';
-
-part 'meu_amigo_model.g.dart';
-
-class MeuAmigo = _MeuAmigo with _$MeuAmigo;
-
-abstract class _MeuAmigo with Store {
-  @observable
+class MeuAmigo {
   String? objectId;
-
-  @observable
   String? nomeDoAmigo;
-
-  @observable
   String? dataNascimento;
-
-  @observable
   String? raca;
-
-  @observable
   String? sexo;
-
-  @observable
   String? createdAt;
-
-  @observable
   String? updatedAt;
 
-  _MeuAmigo({
+  MeuAmigo({
     this.objectId,
     this.nomeDoAmigo,
     this.dataNascimento,
@@ -36,11 +17,9 @@ abstract class _MeuAmigo with Store {
     this.updatedAt,
   });
 
-  @action
-  _MeuAmigo.vazio();
+  MeuAmigo.vazio();
 
-  @action
-  _MeuAmigo.fromJson(Map<String, dynamic> json) {
+  MeuAmigo.fromJson(Map<String, dynamic> json) {
     objectId = json['objectId'];
     nomeDoAmigo = json['nomeDoAmigo'];
     dataNascimento = json['dataNascimento'];
@@ -50,7 +29,6 @@ abstract class _MeuAmigo with Store {
     updatedAt = json['updatedAt'];
   }
 
-  @action
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['objectId'] = objectId;

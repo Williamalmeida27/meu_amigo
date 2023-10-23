@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:meulucky/pages/my_home_page.dart';
 import 'package:meulucky/pages/pesagem/cadastrar_pesagem_page.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -39,18 +38,6 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     ),
                     FaIcon(FontAwesomeIcons.add)
                   ],
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => const MyHomePage()));
-              },
-              child: const Padding(
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: 25),
-                child: Row(
-                  children: [FaIcon(FontAwesomeIcons.arrowLeftLong)],
                 ),
               ),
             ),
